@@ -9,7 +9,7 @@ from entities.light import Light
 def main():
     pygame.init()
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Vehicle 6: Evolution Data HUD")
+    pygame.display.set_caption("Vehicle 6")
     clock = pygame.time.Clock()
     
     font = pygame.font.SysFont("consolas", 14)
@@ -30,7 +30,7 @@ def main():
     best_spawn_id = 0 
 
     # --- NEW: HUD State Toggle ---
-    show_full_hud = True 
+    show_full_hud = False 
 
     running = True
     while running:
