@@ -2,6 +2,7 @@
 import pygame
 import math
 import random
+from config import STARTING_ENERGY
 
 class Vehicle:
     def __init__(self, x, y, radius=15, heading=0, weights=None):
@@ -27,7 +28,6 @@ class Vehicle:
         b = max(0, min(255, int(128 + self.weights[2] * 50)))
         self.color = (r, g, b)
 
-        from config import STARTING_ENERGY
         self.energy = STARTING_ENERGY
         self.fitness = 0
         self.alive = True
